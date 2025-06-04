@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # Copy the jar file to the container
-COPY target/*.jar /app
+COPY target/backendservice-0.0.1-SNAPSHOT.jar backendservice.jar
 
 # Expose the application port (adjust if needed)
 EXPOSE 8080
